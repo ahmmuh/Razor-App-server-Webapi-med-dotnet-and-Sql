@@ -1,0 +1,9 @@
+﻿@page "/employeedetail/{id}"
+
+@inherits EmployeeDetailBase
+
+
+@foreach (var employee in Employee)
+{
+    <h2>@employee.Firstname @employee.Lastname</h2>
+}
